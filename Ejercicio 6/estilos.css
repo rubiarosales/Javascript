@@ -1,0 +1,28 @@
+
+.flex-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    
+}
+.flex-item{
+    border: 1px solid black;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 10px;
+
+}
+
+.flex-item:hover{
+    box-shadow: 2px 2px black;
+}
+
+form{
+    text-align: center;
+    margin: 20px;
+
+}
