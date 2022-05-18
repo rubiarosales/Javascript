@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.nombre,.aprobados, .desaprobados{
+    background-color: rgba(87, 22, 161, 0.322);
+    color: rgb(20, 19, 19);
+    font-size: 20px;
+    display:none;
+    line-height: 30px;
+    height: 45px;
+    width:300px;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    height: 50px;
+    width:300px;
+    font-size: 25px;
+    background-color: rgba(68, 68, 165, 0.89);
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+.edad{
+    background-color: rgb(255, 0, 0);
+    color: #000;
+    font-size: 20px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+

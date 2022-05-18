@@ -1,0 +1,6 @@
+{
+    "nombre":"Rubia",
+    "edad": 31,
+    "aprobados": 1456,
+    "desaprobados": 466
+}
