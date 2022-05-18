@@ -1,0 +1,72 @@
+.formulario-notas{
+    color: #fff;
+    margin: auto;
+
+}
+.pedir-nota{
+    width: 500px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(103, 103, 224, 0.856);
+
+}
+
+.pedir-nota h2{
+    margin: 20px 30px 20px 20px;
+}
+#nota{
+    width: 40px;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+#send-btn{
+    width: min-content;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.modal{
+    display: none;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.open-modal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.resultado{
+    width: max-content;
+    padding: 20px;
+    height: 100px;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.green{
+    color:green;
+}
+
+.red{
+    color: red;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
