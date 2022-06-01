@@ -1,0 +1,45 @@
+button{
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+    height: 30px;
+    width:max-content;
+    border-radius: 8%;
+    margin: 5px;
+}
+
+input{
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+}
+
+.instruccion{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.calculadora{
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 194, 248);
+    border: #000000 dashed 1px;
+}
+
+.contenedor{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.respuesta{
+    font-size: 20px;
+    margin: 5px;
+}
