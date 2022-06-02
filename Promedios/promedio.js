@@ -7,11 +7,11 @@ let suma=0;
 const div=document.createElement("DIV");
 const reiniciarBtn=document.createElement("BUTTON");
 let valorInput=document.querySelector(".numeros");
-let numero=parseInt(valorInput.value);
+let numero=parseFloat(valorInput.value);
 
 const leerNumeros =()=>{
     let valorInput=document.querySelector(".numeros");
-    let numero=parseInt(valorInput.value);
+    let numero=parseFloat(valorInput.value);
     try{
     if (isNaN(numero)){
         throw "Error"
