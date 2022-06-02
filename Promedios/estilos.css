@@ -17,6 +17,7 @@ button{
     width:max-content;
     border-radius: 8%;
     margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 .reinicio-btn{

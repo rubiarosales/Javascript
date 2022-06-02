@@ -8,6 +8,7 @@ const div=document.createElement("DIV");
 const reiniciarBtn=document.createElement("BUTTON");
 let valorInput=document.querySelector(".numeros");
 let numero=parseFloat(valorInput.value);
+let promedio;
 
 const leerNumeros =()=>{
     let valorInput=document.querySelector(".numeros");
@@ -34,21 +35,30 @@ const leerNumeros =()=>{
 enterBtn.addEventListener("click",leerNumeros);
 
 resultBtn.addEventListener("click", ()=>{
-    leerNumeros();
+        leerNumeros();
         for (let i = 0; i < numeros.length; i++) {
             suma = suma + numeros[i];
         }
-        let promedio=suma/(numeros.length);
-        div.classList.add("respuesta");
-        document.body.appendChild(div);
-        div.innerHTML=`El promedio de ${numeros} es ${promedio}`;
-        quiereResultado=true;
-        resultBtn.disabled=true;
-        enterBtn.disabled=true;
-        reiniciarBtn.classList.add("reinicio-btn");
-        reiniciarBtn.textContent="Reiniciar";
-        document.body.appendChild(reiniciarBtn);
-
+        if (suma!=0){
+            promedio=suma/(numeros.length);
+            div.classList.add("respuesta");
+            document.body.appendChild(div);
+            div.innerHTML=`El promedio de ${numeros} es ${promedio}`;
+            quiereResultado=true;
+            resultBtn.disabled=true;
+            enterBtn.disabled=true;
+            reiniciarBtn.classList.add("reinicio-btn");
+            reiniciarBtn.textContent="Reiniciar";
+            document.body.appendChild(reiniciarBtn);
+        } else{
+            div.innerHTML=`Verifique los datos ingresados`;
+            quiereResultado=true;
+            resultBtn.disabled=true;
+            enterBtn.disabled=true;
+            reiniciarBtn.classList.add("reinicio-btn");
+            reiniciarBtn.textContent="Reiniciar";
+            document.body.appendChild(reiniciarBtn);
+        }
     });
 
     reiniciarBtn.addEventListener("click",()=>{
